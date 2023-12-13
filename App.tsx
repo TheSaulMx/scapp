@@ -2,10 +2,10 @@ import React from 'react';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {StyleSheet, View, Text, Button} from 'react-native';
-import { AppRootParamList } from './AppNavigation';
 
 function HomeScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
+
   return (
     <View style={styles.homeText}>
       <Text>Home Screen</Text>
